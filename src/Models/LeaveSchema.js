@@ -4,7 +4,7 @@ const LeaveSchema = mongoose.Schema({
     EmpId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
     LeaveTitle: String,
     LeaveReason: String,
-    LeaveType:String,
+    LeaveType: String,
     LeaveStartDate: Date,
     LeaveEndDate: Date,
     LeaveAppliedDate: { type: Date, default: new Date() },
@@ -14,3 +14,4 @@ const LeaveSchema = mongoose.Schema({
 })
 
 module.exports = mongoose.model("Leave", LeaveSchema)
+
